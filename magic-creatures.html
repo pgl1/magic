@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>魔法生物</title>
+    <link rel="stylesheet" href="magic-creatures.css">
+</head>
+<body>
+    <div class="floating-lights"></div>
+    <div class="content">
+        <h1>神奇生物在这里</h1>
+        <div class="creatures-container">
+            <div class="creature phoenix" onclick="showDetail('phoenix')">
+                <div class="creature-content">
+                    <h2>不死鸟</h2>
+                    <p>浴火重生的永恒象征</p>
+                </div>
+            </div>
+            <div class="creature unicorn" onclick="showDetail('unicorn')">
+                <div class="creature-content">
+                    <h2>独角兽</h2>
+                    <p>纯洁与魔法的化身</p>
+                </div>
+            </div>
+            <div class="creature dragon" onclick="showDetail('dragon')">
+                <div class="creature-content">
+                    <h2>巨龙</h2>
+                    <p>力量与智慧的代表</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 详细介绍的弹窗 -->
+    <div class="detail-modal" id="detailModal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeDetail()">&times;</span>
+            <div class="detail-image"></div>
+            <div class="detail-text">
+                <h2></h2>
+                <p class="description"></p>
+                <div class="magic-abilities"></div>
+            </div>
+        </div>
+    </div>
+    <script src="magic-creatures.js"></script>
+</body>
+</html> 

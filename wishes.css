@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+.stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMiIgaGVpZ2h0PSIyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxjaXJjbGUgY3g9IjEiIGN5PSIxIiByPSIxIiBmaWxsPSIjZmZmIi8+PC9zdmc+') repeat;
+    animation: twinkle 2s infinite;
+}
+
+@keyframes twinkle {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 0.8; }
+}
+
+.magic-portal {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+.portal-ring {
+    position: absolute;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    animation: expand 3s infinite;
+}
+
+.portal-ring:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.portal-ring:nth-child(3) {
+    animation-delay: 2s;
+}
+
+@keyframes expand {
+    0% {
+        transform: scale(0.3);
+        opacity: 0.8;
+        border-color: #4fc3dc;
+    }
+    100% {
+        transform: scale(2);
+        opacity: 0;
+        border-color: #ff2d75;
+    }
+}
+
+.welcome-text {
+    position: fixed;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.welcome-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.user-name {
+    font-size: 1.8em;
+    color: #ff2d75;
+    text-shadow: 0 0 15px rgba(255, 45, 117, 0.8);
+}
+
+.portal-active .stars {
+    animation: warp 10s linear forwards;
+}
+
+.portal-active .magic-portal {
+    animation: portal-zoom 10s linear forwards;
+}
+
+.portal-active .welcome-text {
+    animation: fade-out 2s forwards;
+}
+
+@keyframes warp {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(2); opacity: 0.5; }
+    100% { transform: scale(3); opacity: 0; }
+}
+
+@keyframes portal-zoom {
+    0% { transform: scale(1); }
+    100% { transform: scale(50); }
+}
+
+@keyframes fade-out {
+    to { opacity: 0; }
+} 
