@@ -33,7 +33,7 @@ function createFloatingLights() {
 const creaturesData = {
     phoenix: {
         name: "不死鸟",
-        image: "images/phoenix-detail.jpg",
+        image: "./images/不死鸟.png",
         description: "不死鸟是一种神奇的魔法生物，能够浴火重生。当它年老时，会在火焰中化为灰烬，然后从灰烬中重生为一只幼鸟。",
         abilities: [
             "浴火重生：能够从灰烬中重获新生",
@@ -44,7 +44,7 @@ const creaturesData = {
     },
     unicorn: {
         name: "独角兽",
-        image: "images/unicorn-detail.jpg",
+        image: "./images/独角兽.png",
         description: "独角兽是最纯洁的魔法生物之一，它们通常栖息在森林深处。独角兽的角具有强大的魔法力量，能净化一切邪恶。",
         abilities: [
             "净化魔法：角具有净化能力",
@@ -55,7 +55,7 @@ const creaturesData = {
     },
     dragon: {
         name: "巨龙",
-        image: "images/dragon-detail.jpg",
+        image: "./images/巨龙.png",
         description: "巨龙是最古老和最强大的魔法生物之一。它们不仅拥有强大的物理力量，还具备高度的智慧和魔法能力。",
         abilities: [
             "龙息：可以喷射强大的魔法吐息",

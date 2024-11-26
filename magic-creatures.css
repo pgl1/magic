@@ -58,17 +58,17 @@ h1 {
 }
 
 .phoenix {
-    background-image: url('images/phoenix.jpg');
+    background-image: url('./images/不死鸟.png');
     animation: glow 3s infinite alternate;
 }
 
 .unicorn {
-    background-image: url('images/unicorn.jpg');
+    background-image: url('./images/独角兽.png');
     animation: glow 3s infinite alternate 1s;
 }
 
 .dragon {
-    background-image: url('images/dragon.jpg');
+    background-image: url('./images/巨龙.png');
     animation: glow 3s infinite alternate 2s;
 }
 
