@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         setTimeout(() => {
             window.location.href = `magic-creatures.html?name=${encodeURIComponent(name)}`;
-        }, 10000);
+        }, 5000);
     }, 2000);
 });
 

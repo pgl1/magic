@@ -80,11 +80,11 @@ body {
 }
 
 .portal-active .stars {
-    animation: warp 10s linear forwards;
+    animation: warp 5s linear forwards;
 }
 
 .portal-active .magic-portal {
-    animation: portal-zoom 10s linear forwards;
+    animation: portal-zoom 5s linear forwards;
 }
 
 .portal-active .welcome-text {
@@ -103,5 +103,58 @@ body {
 }
 
 @keyframes fade-out {
+    to { opacity: 0; }
+}
+
+@-webkit-keyframes twinkle {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 0.8; }
+}
+
+@-webkit-keyframes expand {
+    0% {
+        -webkit-transform: scale(0.3);
+        transform: scale(0.3);
+        opacity: 0.8;
+        border-color: #4fc3dc;
+    }
+    100% {
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        opacity: 0;
+        border-color: #ff2d75;
+    }
+}
+
+@-webkit-keyframes warp {
+    0% { 
+        -webkit-transform: scale(1); 
+        transform: scale(1); 
+        opacity: 1; 
+    }
+    50% { 
+        -webkit-transform: scale(2); 
+        transform: scale(2); 
+        opacity: 0.5; 
+    }
+    100% { 
+        -webkit-transform: scale(3); 
+        transform: scale(3); 
+        opacity: 0; 
+    }
+}
+
+@-webkit-keyframes portal-zoom {
+    0% { 
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    100% { 
+        -webkit-transform: scale(50);
+        transform: scale(50);
+    }
+}
+
+@-webkit-keyframes fade-out {
     to { opacity: 0; }
 } 
