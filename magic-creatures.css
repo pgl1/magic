@@ -5,7 +5,6 @@ body {
     background: linear-gradient(135deg, #1a1a2e, #16213e);
     font-family: Arial, sans-serif;
     color: #fff;
-    overflow: hidden;
 }
 
 .floating-lights {
@@ -22,6 +21,8 @@ body {
     z-index: 1;
     padding: 2rem;
     text-align: center;
+    min-height: calc(100vh - 4rem);
+    padding-bottom: 4rem;
 }
 
 h1 {
@@ -38,6 +39,7 @@ h1 {
     flex-wrap: wrap;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 1rem;
 }
 
 .creature {
